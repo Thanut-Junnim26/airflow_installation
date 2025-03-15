@@ -89,13 +89,6 @@ services:
     <<: *airflow-common
     container_name: airflow_webserver
     entrypoint: ['airflow', 'webserver']
-    # entrypoint: ["/bin/bash", "-c"]
-    # command:
-    #   - |
-    #     airflow db upgrade &&
-    #     airflow users create --role Admin --username admin --password admin --email admin@airflow.com --firstname Admin --lastname User;
-    #     exec airflow webserver
-
     ports:
       - "8080:8080"
     depends_on:
