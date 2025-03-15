@@ -1,0 +1,6 @@
+apache-airflow[celery,postgres,redis]
+pandas
+google-cloud-storage
+sqlalchemy
+fuzzywuzzy
+Faker
