@@ -13,6 +13,7 @@ x-airflow-common:
     - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://postgres:postgres@postgres:5432/airflow
     - AIRFLOW__CORE__FERNET_KEY=FB0o_zt4e3Ziq3LdUUO7F2Z95cvFFx16hU8jTeR1ASM=
     - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    - AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK=True
     - AIRFLOW__LOGGING__LOGGING_LEVEL=INFO
   volumes:
     - ./airflow/dags:/opt/airflow/dags
